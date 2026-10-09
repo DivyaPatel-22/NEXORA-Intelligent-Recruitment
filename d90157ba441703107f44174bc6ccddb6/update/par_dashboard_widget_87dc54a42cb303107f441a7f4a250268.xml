@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">7d6d73c044b743107f446983d8f840b4</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1k43l4q3m30mum3ub5b8","filterName":"Label","filterCustomId":"","filterComponentType":"singleselect","datasource":{"type":"table","payload":{"field":"candidate_status","fieldType":"choice","table":"x_snc_nexora_int_0_candidate","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"candidate_status","table":"x_snc_nexora_int_0_candidate","primaryKey":"sys_id"}}],"defaultSelectedItems":[],"defaultSelectedDateRange":{"range":""},"dateFilterView":"calendar-reldates","sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","cascadeScope":"f96d73c044b743107f446983d8f840b0","isDashboard":true,"isGroup":false,"value":[]}</component_props>
+        <h>12</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Label","code":"PAR_DASHBOARD.7d6d73c044b743107f446983d8f840b4.87dc54a42cb303107f441a7f4a250268"},{"comment":"","message":"Apply","code":"PAR_DASHBOARD.7d6d73c044b743107f446983d8f840b4.87dc54a42cb303107f441a7f4a250268"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 14:30:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>87dc54a42cb303107f441a7f4a250268</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>par_dashboard_widget_87dc54a42cb303107f441a7f4a250268</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 14:30:48</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props/>
+        <x>24</x>
+        <y>24</y>
+    </par_dashboard_widget>
+</record_update>

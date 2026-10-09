@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <filter_extension/>
+        <is_data_interface>false</is_data_interface>
+        <is_df_table>false</is_df_table>
+        <is_extendable>false</is_extendable>
+        <label>Hiring Recommendation</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_snc_nexora_int_0_hiring_recommendation</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-17 09:22:09</sys_created_on>
+        <sys_id>94d27bba441b03107f44174bc6ccddd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hiring Recommendation</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_db_object_94d27bba441b03107f44174bc6ccddd0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-17 09:22:09</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_snc_nexora_int_0.hiring_recommendation_user" name="x_snc_nexora_int_0.hiring_recommendation_user">c0333372445b03107f44174bc6ccddee</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>

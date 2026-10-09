@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_eval_strategy">
+    <sys_one_extend_eval_strategy action="INSERT_OR_UPDATE">
+        <capability display_value="NEXORA Hiring Recommendation">1391f3d6a8a303107f44168cb949e936</capability>
+        <default>true</default>
+        <name>Default</name>
+        <skill_config_id>e391f3d6a8a303107f44168cb949e999</skill_config_id>
+        <sys_class_name>sys_one_extend_eval_strategy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 06:14:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f91f3d6a8a303107f44168cb949e9e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_one_extend_eval_strategy_3f91f3d6a8a303107f44168cb949e9e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 06:14:02</sys_updated_on>
+    </sys_one_extend_eval_strategy>
+</record_update>

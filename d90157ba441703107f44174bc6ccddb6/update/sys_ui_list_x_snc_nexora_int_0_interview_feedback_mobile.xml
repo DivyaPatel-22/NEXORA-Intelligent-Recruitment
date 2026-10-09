@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_nexora_int_0_interview_feedback" version="2" view="Mobile">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>comments</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>a4be26a4e8a343107f44977383ba5cb0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>communication_score</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>24be26a4e8a343107f44977383ba5cb1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>interview</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>a8be26a4e8a343107f44977383ba5cb1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>overall_score</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>20be26a4e8a343107f44977383ba5cb2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>problem_solving_score</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>a4be26a4e8a343107f44977383ba5cb2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>recommendation</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>2cbe26a4e8a343107f44977383ba5cb2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>strengths</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>a0be26a4e8a343107f44977383ba5cb3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>technical_score</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>28be26a4e8a343107f44977383ba5cb3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>weaknesses</element>
+            <list_id display_value="x_snc_nexora_int_0_interview_feedback" element="NULL" name="x_snc_nexora_int_0_interview_feedback" parent="NULL" relationship="NULL" sys_domain="global" view="3df22e33292103107f44f3a98c1824d4">6cbe26a4e8a343107f44977383ba5cae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_id>acbe26a4e8a343107f44977383ba5cb3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_nexora_int_0_interview_feedback</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-22 14:52:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6cbe26a4e8a343107f44977383ba5cae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_nexora_int_0_interview_feedback</sys_name>
+            <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_nexora_int_0_interview_feedback_Mobile</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-22 14:52:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Mobile" name="Mobile">3df22e33292103107f44f3a98c1824d4</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="NEXORA Resume Analysis Agent">f72be958f93303107f44e7503c48050f</agent>
+        <description>Extract candidate name, email, phone, education, professional experience, technical and professional skills, and resume summary from the uploaded resume.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>f72be958f93303107f44e7503c48050f</entity_id>
+        <execution_mode>copilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Extract Resume Information</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 02:00:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2411f554f97303107f44e7503c48059d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Extract Resume Information</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_2411f554f97303107f44e7503c48059d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 02:00:14</sys_updated_on>
+        <timeout/>
+        <tool display_value="Extract information from documents">a811f554f97303107f44e7503c480599</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

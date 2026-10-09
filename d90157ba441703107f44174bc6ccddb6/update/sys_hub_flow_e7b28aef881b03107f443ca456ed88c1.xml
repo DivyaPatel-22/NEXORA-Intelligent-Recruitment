@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=175072000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatically generate a professional job description from a NEXORA Job Opening record using the NEXORA Generate Job Description AI skill.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>nexora_generate_job_description_flow</internal_name>
+        <label_cache>[{"name":"Created_1.current.current","label":"Trigger - Record Created➛Record","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"49c15799-2c3f-46f0-b410-69454bd21a43":["record"]},"attributes":{"":""}},{"name":"Created or Updated_1.current.job_title","label":"Trigger - Record Created or Updated➛Job Opening Record➛Job Title","reference":"","reference_display":"Job Title","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"job_title","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["jobtitle"]}},{"name":"Created or Updated_1.current.required_skills","label":"Trigger - Record Created or Updated➛Job Opening Record➛Required Skills","reference":"","reference_display":"Required Skills","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"required_skills","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["skills"]}},{"name":"Created or Updated_1.current.required_experience","label":"Trigger - Record Created or Updated➛Job Opening Record➛Required Experience","reference":"","reference_display":"Required Experience","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"required_experience","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["experience"]}},{"name":"28e909cf-8caf-4839-8db6-4628d4cd3e92.output","label":"1 - Execute Skill➛output","reference_display":"output","type":"dynamic_object","base_type":"dynamic_object","usedInstances":{},"attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ddde43cc-85e6-45cc-894e-fb6b89308158"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Job Opening Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["document_id"]}},{"name":"Created or Updated_1.current.description","label":"Trigger - Record Created or Updated➛Job Opening Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"description","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["description"]}},{"name":"Created or Updated_1.current.department","label":"Trigger - Record Created or Updated➛Job Opening Record➛Department","reference":"","reference_display":"Department","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"department","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["department"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Job Opening Record","reference":"x_snc_nexora_int_0_job_opening","reference_display":"Job Opening","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["job_opening","description"],"49c15799-2c3f-46f0-b410-69454bd21a43":["record"],"23c6532f-5e67-4508-ab61-20d662dbc68f":["record"]},"attributes":{"":""}},{"name":"Created or Updated_1.current.education","label":"Trigger - Record Created or Updated➛Job Opening Record➛Education","reference":"","reference_display":"Education","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"education","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["education"]}},{"name":"28e909cf-8caf-4839-8db6-4628d4cd3e92.output.response","label":"1 - Execute Skill➛output➛response","reference_display":"response","type":"string","base_type":"string","usedInstances":{},"attributes":{"":""}},{"name":"Created or Updated_1.current.ai_generated_jd","label":"Trigger - Record Created or Updated➛Job Opening Record➛AI Generated JD","reference":"","reference_display":"AI Generated JD","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"ai_generated_jd","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["skill_config"]}}]</label_cache>
+        <master_snapshot>4e9e9458696b03107f44478206183286</master_snapshot>
+        <master_snapshot_digest/>
+        <name>NEXORA Generate Job Description Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>1a9e9458696b03107f444782061832f8</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:06:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7b28aef881b03107f443ca456ed88c1</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>NEXORA Generate Job Description Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_hub_flow_e7b28aef881b03107f443ca456ed88c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:14</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>329ed458696b03107f4447820618329e</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_nexora_int_0_job_opening">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1a9e9458696b03107f444782061832f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:14</sys_updated_on>
+        <table>x_snc_nexora_int_0_job_opening</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e7b28aef881b03107f443ca456ed88c1</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:14</sys_created_on>
+        <sys_id>529e9458696b03107f444782061832fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:14</sys_updated_on>
+        <trigger display_value="">1a9e9458696b03107f444782061832f8</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e7b28aef881b03107f443ca456ed88c1^sys_idNOT IN529e9458696b03107f444782061832fa"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e7b28aef881b03107f443ca456ed88c1^sys_idNOT IN2bb28aef881b03107f443ca456ed88c4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e7b28aef881b03107f443ca456ed88c1</id>
+        <name>NEXORA Generate Job Description Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:06:19</sys_created_on>
+        <sys_id>2bb28aef881b03107f443ca456ed88c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 09:06:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2bb28aef881b03107f443ca456ed88c4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e7b28aef881b03107f443ca456ed88c1^sys_idNOT IN3b034623885b03107f443ca456ed8842,6f034623885b03107f443ca456ed8837,df030623885b03107f443ca456ed88bd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="NEXORA Generate Job Description Flow">e7b28aef881b03107f443ca456ed88c1</model>
+        <model_id>e7b28aef881b03107f443ca456ed88c1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e7b28aef881b03107f443ca456ed88c1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:07:41</sys_created_on>
+        <sys_id>3b034623885b03107f443ca456ed8842</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 09:07:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3b034623885b03107f443ca456ed8842"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NEXORA Generate Job Description Flow">e7b28aef881b03107f443ca456ed88c1</model>
+        <model_id>e7b28aef881b03107f443ca456ed88c1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e7b28aef881b03107f443ca456ed88c1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:07:41</sys_created_on>
+        <sys_id>6f034623885b03107f443ca456ed8837</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6f034623885b03107f443ca456ed8837"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NEXORA Generate Job Description Flow">e7b28aef881b03107f443ca456ed88c1</model>
+        <model_id>e7b28aef881b03107f443ca456ed88c1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e7b28aef881b03107f443ca456ed88c1</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:07:40</sys_created_on>
+        <sys_id>df030623885b03107f443ca456ed88bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=df030623885b03107f443ca456ed88bd"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e7b28aef881b03107f443ca456ed88c1^sys_idNOT INc0ff670869e303107f444782061832c5"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="NEXORA Generate Job Description Flow">e7b28aef881b03107f443ca456ed88c1</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 06:20:21</sys_created_on>
+        <sys_id>c0ff670869e303107f444782061832c5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:11</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e7b28aef881b03107f443ca456ed88c1^sys_idNOT IN56a34aa7881b03107f443ca456ed889d,b850374869e303107f44478206183274"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Execute Skill">30468d977f921210f465c3b76d8665c1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>30468d977f921210f465c3b76d8665c1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="NEXORA Generate Job Description Flow">e7b28aef881b03107f443ca456ed88c1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:10:20</sys_created_on>
+        <sys_id>56a34aa7881b03107f443ca456ed889d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 06:14:39</sys_updated_on>
+        <ui_id>28e909cf-8caf-4839-8db6-4628d4cd3e92</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=56a34aa7881b03107f443ca456ed889d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="NEXORA Generate Job Description Flow">e7b28aef881b03107f443ca456ed88c1</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 06:22:03</sys_created_on>
+        <sys_id>b850374869e303107f44478206183274</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 06:14:39</sys_updated_on>
+        <ui_id>23c6532f-5e67-4508-ab61-20d662dbc68f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V328TORD+Vyw/QS+33W1KBeGpaq+6Q9BIhOsLQZbXnk3c89p7trckRPnfGXt30yhAVSQeQCIvicfz4/vG30zeb6iSdELzE5kXL4ozMS7G45M8P3l+WpRn47I4kWMOAHREDa8BPe+4bsHjOf1AA1dsAQYcDyDZrZy3eT6WlfzTC6catKGrVL7RfH3z+AixVFo6MHTy/sOINtxh8QCOTjYHV49Fr3kJGl2vFGjpv0InrJt4DlAj1ACso9fZX/fB7/pLctNfWicjqCLPRxRWAYxE9JOKaw8jWnMjebBuTSfBtWhwwOXU6PXOY6lMwLQ0+q68+oQAirM8faJ3BUhTQOexO7K+m525uuSBzzC/CK3rXcXSKoGkUoMkVLzV4WLf1jlMm6Cs6UICL/UQbXVbm+uuPXSXYHg8tLQeQUAT2Ub8HblqtrQf3w4gr5RJnemJaiu43p14CE6VbYhwNhQ01JiH1bxplFmwxtk7lYIRSp0tNB6yStuPWNOrhcm4iLgz7C3PrtB+mcw33KlI4g2mweDtiPq1v9Dc+3sq2EP2fxuRdMR6Cix1IbWAJVnE4KTFcyx1BwPFzhYxHyg4mh4KoMdHc3N0dC7wBTyJmI/PEwkSSZDWI28SlkAqyZLFlrcgQkZmKQGpWx+IA3xhQzhJysxIzDiN+iOmrUv8Up7YqvIQSLkmfxREGfKXc9aRv1GIOpaYQde6BOaOKx0pE5t04EmvK9I2CKxxCDXGzGk2p4RXOH0DvBgOK46zABNE44hfWhfwGQTpZnlwzPCdFwtwmWgdyiJkyTG+Y+KFVV/GXD2zXZZoPJ6bmBlRIBoP0/J2yP1qNr3OcCN4eDKUYQVjsAKBkmL+P6V1ZtvQtCEbwp9iyr7KXsasthI063xf0u12O+rX4Sk8uFCK+/3hQOAS2FuHm80FzjnqgmDn/21kkkgxdGC7/XIdfve6ewS6Yd29HeAdwu3XnbSiTdOn5MGuu+xvyD+X+4vuR+25098b7qfacAn4Tv/ls4cUJl7cC2ov5/0MrJg3ghlYWccZvj3L2a0tmUU0yP/LCXhlSzLdXX7fMDwC6jAM75IEvg59+Ps/tL3ejyXX3UU/Dc9+2DQ8/5Wmoafxy4/Dt4bgw2d91ob7FQsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b850374869e303107f44478206183274"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e7b28aef881b03107f443ca456ed88c1^sys_idNOT IN28439010692b03107f444782061832c8,68439010692b03107f444782061832c9"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e7b28aef881b03107f443ca456ed88c1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{28e909cf-8caf-4839-8db6-4628d4cd3e92.output.response}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 08:54:41</sys_created_on>
+        <sys_id>28439010692b03107f444782061832c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 08:54:41</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>371f3c1a-a5f8-4836-aa53-fdd9351881a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e7b28aef881b03107f443ca456ed88c1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{28e909cf-8caf-4839-8db6-4628d4cd3e92.output}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 08:54:41</sys_created_on>
+        <sys_id>68439010692b03107f444782061832c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 08:54:41</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>427f45db-7dfa-4179-988a-1bfb0f170c84</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e7b28aef881b03107f443ca456ed88c1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:07:41</sys_created_on>
+        <sys_id>af034623885b03107f443ca456ed880c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 09:07:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e7b28aef881b03107f443ca456ed88c1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:07:42</sys_created_on>
+        <sys_id>b3034623885b03107f443ca456ed8849</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 09:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e7b28aef881b03107f443ca456ed88c1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 09:07:41</sys_created_on>
+        <sys_id>e3034623885b03107f443ca456ed883e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 09:07:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e7b28aef881b03107f443ca456ed88c1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatically generate a professional job description from a NEXORA Job Opening record using the NEXORA Generate Job Description AI skill.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>nexora_generate_job_description_flow</internal_name>
+        <label_cache>[{"name":"Created_1.current.current","label":"Trigger - Record Created➛Record","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"49c15799-2c3f-46f0-b410-69454bd21a43":["record"]},"attributes":{"":""}},{"name":"Created or Updated_1.current.job_title","label":"Trigger - Record Created or Updated➛Job Opening Record➛Job Title","reference":"","reference_display":"Job Title","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"job_title","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["jobtitle"]}},{"name":"Created or Updated_1.current.required_skills","label":"Trigger - Record Created or Updated➛Job Opening Record➛Required Skills","reference":"","reference_display":"Required Skills","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"required_skills","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["skills"]}},{"name":"Created or Updated_1.current.required_experience","label":"Trigger - Record Created or Updated➛Job Opening Record➛Required Experience","reference":"","reference_display":"Required Experience","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"required_experience","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["experience"]}},{"name":"28e909cf-8caf-4839-8db6-4628d4cd3e92.output","label":"1 - Execute Skill➛output","reference_display":"output","type":"dynamic_object","base_type":"dynamic_object","usedInstances":{},"attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ddde43cc-85e6-45cc-894e-fb6b89308158"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Job Opening Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["document_id"]}},{"name":"Created or Updated_1.current.description","label":"Trigger - Record Created or Updated➛Job Opening Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"description","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["description"]}},{"name":"Created or Updated_1.current.department","label":"Trigger - Record Created or Updated➛Job Opening Record➛Department","reference":"","reference_display":"Department","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"department","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["department"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Job Opening Record","reference":"x_snc_nexora_int_0_job_opening","reference_display":"Job Opening","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["job_opening","description"],"49c15799-2c3f-46f0-b410-69454bd21a43":["record"],"23c6532f-5e67-4508-ab61-20d662dbc68f":["record"]},"attributes":{"":""}},{"name":"Created or Updated_1.current.education","label":"Trigger - Record Created or Updated➛Job Opening Record➛Education","reference":"","reference_display":"Education","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"education","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["education"]}},{"name":"28e909cf-8caf-4839-8db6-4628d4cd3e92.output.response","label":"1 - Execute Skill➛output➛response","reference_display":"response","type":"string","base_type":"string","usedInstances":{},"attributes":{"":""}},{"name":"Created or Updated_1.current.ai_generated_jd","label":"Trigger - Record Created or Updated➛Job Opening Record➛AI Generated JD","reference":"","reference_display":"AI Generated JD","type":"string","base_type":"string","parent_table_name":"x_snc_nexora_int_0_job_opening","column_name":"ai_generated_jd","choices":[{"order":0.0}],"usedInstances":{"28e909cf-8caf-4839-8db6-4628d4cd3e92":["skill_config"]}}]</label_cache>
+        <master>true</master>
+        <name>NEXORA Generate Job Description Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="NEXORA Generate Job Description Flow">e7b28aef881b03107f443ca456ed88c1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e9e9458696b03107f44478206183286</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:12</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=4e9e9458696b03107f44478206183286"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4e9e9458696b03107f44478206183286"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4e9e9458696b03107f44478206183286"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4e9e9458696b03107f44478206183286^sys_idNOT INca9e9458696b03107f44478206183287"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4e9e9458696b03107f44478206183286</id>
+        <name>NEXORA Generate Job Description Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>ca9e9458696b03107f44478206183287</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ca9e9458696b03107f44478206183287"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4e9e9458696b03107f44478206183286^sys_idNOT IN4a9e9458696b03107f44478206183289,ce9e9458696b03107f4447820618329b,da9e9458696b03107f444782061832a6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NEXORA Generate Job Description Flow">4e9e9458696b03107f44478206183286</model>
+        <model_id>4e9e9458696b03107f44478206183286</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4e9e9458696b03107f44478206183286</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>4a9e9458696b03107f44478206183289</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4a9e9458696b03107f44478206183289"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="NEXORA Generate Job Description Flow">4e9e9458696b03107f44478206183286</model>
+        <model_id>4e9e9458696b03107f44478206183286</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4e9e9458696b03107f44478206183286</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>ce9e9458696b03107f4447820618329b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ce9e9458696b03107f4447820618329b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NEXORA Generate Job Description Flow">4e9e9458696b03107f44478206183286</model>
+        <model_id>4e9e9458696b03107f44478206183286</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4e9e9458696b03107f44478206183286</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>da9e9458696b03107f444782061832a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=da9e9458696b03107f444782061832a6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4e9e9458696b03107f44478206183286"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4e9e9458696b03107f44478206183286"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4e9e9458696b03107f44478206183286^sys_idNOT IN9a9e9458696b03107f444782061832ea"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="NEXORA Generate Job Description Flow">4e9e9458696b03107f44478206183286</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>9a9e9458696b03107f444782061832ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4e9e9458696b03107f44478206183286^sys_idNOT INda9e9458696b03107f444782061832e8,d69e9458696b03107f444782061832e9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Execute Skill">30468d977f921210f465c3b76d8665c1</action_type>
+        <action_type_parent display_value="Execute Skill">d88205df7f521210f465c3b76d866563</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>30468d977f921210f465c3b76d8665c1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="NEXORA Generate Job Description Flow">4e9e9458696b03107f44478206183286</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>da9e9458696b03107f444782061832e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <ui_id>28e909cf-8caf-4839-8db6-4628d4cd3e92</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=da9e9458696b03107f444782061832e8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="NEXORA Generate Job Description Flow">4e9e9458696b03107f44478206183286</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>d69e9458696b03107f444782061832e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <ui_id>23c6532f-5e67-4508-ab61-20d662dbc68f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V328TORD+Vyw/QS+33W1KBeGpaq+6Q9BIhOsLQZbXnk3c89p7trckRPnfGXt30yhAVSQeQCIvicfz4/vG30zeb6iSdELzE5kXL4ozMS7G45M8P3l+WpRn47I4kWMOAHREDa8BPe+4bsHjOf1AA1dsAQYcDyDZrZy3eT6WlfzTC6catKGrVL7RfH3z+AixVFo6MHTy/sOINtxh8QCOTjYHV49Fr3kJGl2vFGjpv0InrJt4DlAj1ACso9fZX/fB7/pLctNfWicjqCLPRxRWAYxE9JOKaw8jWnMjebBuTSfBtWhwwOXU6PXOY6lMwLQ0+q68+oQAirM8faJ3BUhTQOexO7K+m525uuSBzzC/CK3rXcXSKoGkUoMkVLzV4WLf1jlMm6Cs6UICL/UQbXVbm+uuPXSXYHg8tLQeQUAT2Ub8HblqtrQf3w4gr5RJnemJaiu43p14CE6VbYhwNhQ01JiH1bxplFmwxtk7lYIRSp0tNB6yStuPWNOrhcm4iLgz7C3PrtB+mcw33KlI4g2mweDtiPq1v9Dc+3sq2EP2fxuRdMR6Cix1IbWAJVnE4KTFcyx1BwPFzhYxHyg4mh4KoMdHc3N0dC7wBTyJmI/PEwkSSZDWI28SlkAqyZLFlrcgQkZmKQGpWx+IA3xhQzhJysxIzDiN+iOmrUv8Up7YqvIQSLkmfxREGfKXc9aRv1GIOpaYQde6BOaOKx0pE5t04EmvK9I2CKxxCDXGzGk2p4RXOH0DvBgOK46zABNE44hfWhfwGQTpZnlwzPCdFwtwmWgdyiJkyTG+Y+KFVV/GXD2zXZZoPJ6bmBlRIBoP0/J2yP1qNr3OcCN4eDKUYQVjsAKBkmL+P6V1ZtvQtCEbwp9iyr7KXsasthI063xf0u12O+rX4Sk8uFCK+/3hQOAS2FuHm80FzjnqgmDn/21kkkgxdGC7/XIdfve6ewS6Yd29HeAdwu3XnbSiTdOn5MGuu+xvyD+X+4vuR+25098b7qfacAn4Tv/ls4cUJl7cC2ov5/0MrJg3ghlYWccZvj3L2a0tmUU0yP/LCXhlSzLdXX7fMDwC6jAM75IEvg59+Ps/tL3ejyXX3UU/Dc9+2DQ8/5Wmoafxy4/Dt4bgw2d91ob7FQsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d69e9458696b03107f444782061832e9"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4e9e9458696b03107f44478206183286"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4e9e9458696b03107f44478206183286"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4e9e9458696b03107f44478206183286^sys_idNOT IN5e9e9458696b03107f444782061832ea,129e9458696b03107f444782061832eb"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4e9e9458696b03107f44478206183286</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{28e909cf-8caf-4839-8db6-4628d4cd3e92.output.response}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>5e9e9458696b03107f444782061832ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>371f3c1a-a5f8-4836-aa53-fdd9351881a9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4e9e9458696b03107f44478206183286</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{28e909cf-8caf-4839-8db6-4628d4cd3e92.output}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>129e9458696b03107f444782061832eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>427f45db-7dfa-4179-988a-1bfb0f170c84</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4e9e9458696b03107f44478206183286"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4e9e9458696b03107f44478206183286</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>569e9458696b03107f444782061832b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4e9e9458696b03107f44478206183286</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>8a9e9458696b03107f44478206183297</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4e9e9458696b03107f44478206183286</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:13</sys_created_on>
+        <sys_id>969e9458696b03107f444782061832a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4e9e9458696b03107f44478206183286"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4e9e9458696b03107f44478206183286"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e7b28aef881b03107f443ca456ed88c1</sys_id>
+        <latest_snapshot>4e9e9458696b03107f44478206183286</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-hotfix1-06-18-2026_06-19-2026_0938.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e7b28aef881b03107f443ca456ed88c1^sys_idNOT IN529e9458696b03107f444782061832fb"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"529e9458696b03107f444782061832fb","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>e7b28aef881b03107f443ca456ed88c1</plan_id>
+        <snapshot>81e4b7acf0b303107f443009f0123b5a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:44:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>529e9458696b03107f444782061832fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:44:14</sys_updated_on>
+        <trigger display_value="">1a9e9458696b03107f444782061832f8</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e7b28aef881b03107f443ca456ed88c1"/>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="98295fba445703107f44174bc6ccdd25" label="Candidate" max_length="40" name="x_snc_nexora_int_0_candidate" type="collection">
+        <element label="Experience" max_length="2000" name="experience" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Skills" max_length="3000" name="skills" type="string"/>
+        <element label="Education" max_length="2000" name="education" type="string"/>
+        <element label="Phone" max_length="20" name="phone" type="string"/>
+        <element choice="1" label="Candidate Status" max_length="40" name="candidate_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Screening" sequence="1" value="screening"/>
+                <element inactive_on_update="false" label="Applied" sequence="0" value="applied"/>
+                <element inactive_on_update="false" label="Rejected" sequence="5" value="rejected"/>
+                <element inactive_on_update="false" label="Interview" sequence="3" value="interview"/>
+                <element inactive_on_update="false" label="Selected" sequence="4" value="selected"/>
+                <element inactive_on_update="false" label="Shortlisted" sequence="2" value="shortlisted"/>
+            </choice>
+        </element>
+        <element label="Resume" max_length="40" name="resume" type="file_attachment"/>
+        <element label="Resume Summary" max_length="5000" name="resume_summary" type="string"/>
+        <element label="Email" max_length="100" name="email" type="string"/>
+    </element>
+</database>

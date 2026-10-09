@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations>{"skill_config_id":"77d9efd6a86303107f44168cb949e9a5"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>03d9efd6a86303107f44168cb949e92d</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Interview Feedback Consolidation</name>
+        <parent/>
+        <prompt>You are an AI assistant helping a recruitment team consolidate interview feedback for a candidate.
+
+Your task is to consolidate the supplied interview feedback into one clear and factual assessment.
+
+Use ONLY information explicitly provided in the interview feedback.
+
+IMPORTANT RULES:
+- Do not invent, assume, infer, or fabricate any information.
+- Do not create strengths that are not explicitly mentioned.
+- Do not create weaknesses or skill gaps that are not explicitly mentioned.
+- Do not create interviewer comments that are not explicitly provided.
+- Do not calculate, estimate, or guess scores.
+- For any missing score, write "Not provided".
+- For missing strengths, write "Not provided".
+- For missing weaknesses or skill gaps, write "Not provided".
+- For missing comments, write "Not provided".
+- For missing recommendation, write "Cannot be determined".
+- Preserve the recommendation exactly as provided.
+- The only valid recommendation values are: Shortlist, Hold, Reject.
+- If multiple feedback records contain different recommendations, summarize the disagreement factually and do not choose a recommendation unless the feedback explicitly provides a final recommendation.
+- Do not use information outside the supplied interview feedback.
+
+Consolidate the feedback into the following sections:
+
+1. Overall Score Summary
+Create a simple HTML table containing:
+- Technical Score
+- Communication Score
+- Problem-Solving Score
+- Overall Score
+
+Use the exact scores provided in the feedback.
+Do not calculate missing scores.
+
+2. Strengths
+List only strengths explicitly mentioned in the feedback.
+If none are provided, write "Not provided".
+
+3. Weaknesses / Skill Gaps
+List only weaknesses or skill gaps explicitly mentioned in the feedback.
+If none are provided, write "Not provided".
+
+4. Interviewer Comments
+Summarize only the comments explicitly provided in the feedback.
+Do not invent comments.
+If none are provided, write "Not provided".
+
+5. Recommendation
+Use only:
+- Shortlist
+- Hold
+- Reject
+
+If the feedback does not provide a recommendation, write "Cannot be determined".
+
+6. Final Assessment
+Provide a concise factual assessment based ONLY on the supplied feedback.
+Do not add new information or assumptions.
+
+Return the result as clean HTML only.
+
+Use:
+- &lt;h3&gt; headings
+- &lt;table&gt; for scores
+- &lt;ul&gt; and &lt;li&gt; for lists
+- &lt;p&gt; for paragraphs
+
+Do not use Markdown.
+Do not use code fences.
+Do not include &lt;html&gt;, &lt;head&gt;, or &lt;body&gt; tags.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>archived</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:40:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1bd9efd6a86303107f44168cb949e962</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>03d9efd6a86303107f44168cb949e92d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_generative_ai_config_1bd9efd6a86303107f44168cb949e962</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 15:18:34</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

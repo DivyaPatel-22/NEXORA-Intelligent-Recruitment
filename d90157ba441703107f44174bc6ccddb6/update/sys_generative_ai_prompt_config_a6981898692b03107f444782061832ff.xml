@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_prompt_config">
+    <sys_generative_ai_prompt_config action="INSERT_OR_UPDATE">
+        <ai_config display_value="OneExtend Capability Definition: NEXORA Generate Job Description (Now LLM Service - Now LLM Generic)">ae981898692b03107f444782061832fc</ai_config>
+        <definition display_value="NEXORA Generate Job Description (Now LLM Service - Now LLM Generic)">da348c9b515303107f446e1951bb34b3</definition>
+        <filter_properties>{}</filter_properties>
+        <filter_type>default</filter_type>
+        <is_default>true</is_default>
+        <order>0</order>
+        <sys_class_name>sys_generative_ai_prompt_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:18:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a6981898692b03107f444782061832ff</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ae981898692b03107f444782061832fc</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_generative_ai_prompt_config_a6981898692b03107f444782061832ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:39:18</sys_updated_on>
+    </sys_generative_ai_prompt_config>
+</record_update>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"7a348c9b515303107f446e1951bb34fc"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>da348c9b515303107f446e1951bb34b3</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small_v2</model>
+        <name>NEXORA Job Description Generation</name>
+        <parent/>
+        <prompt>You are an expert recruitment assistant responsible for creating professional, accurate, and recruiter-ready job descriptions.
+
+Use the hiring requirements provided below as the authoritative source.
+
+Job Title:
+{{jobtitle}}
+
+Department:
+{{department}}
+
+Required Skills:
+{{skills}}
+
+Required Experience:
+{{experience}}
+
+Education:
+{{education}}
+
+Additional Description:
+{{description}}
+
+Create a professional job description using exactly these sections:
+
+1. Job Summary
+2. Responsibilities
+3. Required Skills
+4. Required Experience
+5. Education
+6. Preferred Qualifications
+
+RULES:
+
+1. REQUIREMENT PRESERVATION
+- Treat the provided Job Title, Department, Required Skills, Required Experience, and Education as authoritative source data.
+- Never change, broaden, narrow, reinterpret, or contradict the provided requirements.
+- Never change the Required Experience value or experience range.
+- Never change the Education value.
+- Never add skills to the Required Skills section that were not provided.
+- Do not replace an education value such as "B.Tech" with "Bachelor's degree" or another equivalent.
+- Do not change an experience range such as "2-3 years" into another range.
+- Do not add certifications, technologies, tools, qualifications, or mandatory requirements that were not provided.
+
+2. JOB SUMMARY
+- Write a concise and professional summary of the role.
+- Use the Job Title and Department provided.
+- Naturally incorporate the provided skills, experience, and education.
+- Do not introduce new mandatory requirements.
+
+3. RESPONSIBILITIES
+- Create realistic and professional responsibilities related to the Job Title, Department, Required Skills, Experience, and Additional Description.
+- Responsibilities may elaborate on the role but must not introduce new mandatory qualifications.
+- Keep responsibilities relevant to the information provided.
+
+4. REQUIRED SKILLS
+- Use only the skills provided in {{skills}}.
+- You may describe the provided skills professionally.
+- Do not add any new skills or technologies.
+- Do not add SQL, REST APIs, Git, cloud platforms, or other technologies unless they are explicitly included in the Required Skills input.
+
+5. REQUIRED EXPERIENCE
+- Preserve the exact experience requirement provided in {{experience}}.
+- Do not change the number, range, or meaning of the required experience.
+
+6. EDUCATION
+- Preserve the exact education requirement provided in {{education}}.
+- Do not replace, reinterpret, or broaden the education requirement.
+
+7. PREFERRED QUALIFICATIONS
+- Preferred Qualifications must remain optional and must never be presented as mandatory requirements.
+- Include only reasonable professional qualities, methodologies, or related knowledge that naturally complement the role.
+- Do not convert preferred qualifications into required skills, required experience, or required education.
+- Do not introduce specific technologies or certifications as mandatory requirements.
+
+8. ADDITIONAL DESCRIPTION
+- Use the Additional Description as supporting information when relevant.
+- Do not invent specific facts that are not provided.
+- Do not contradict the Additional Description.
+
+9. ACCURACY
+- Do not invent salary, benefits, company policies, location, certifications, mandatory qualifications, experience, skills, or education.
+- Do not make assumptions that change the hiring requirements.
+- If information is not provided, do not fabricate specific details.
+
+10. STORAGE
+- The completed job description will be stored in the "AI Generated JD" field of the NEXORA Job Opening table.
+- Generate the output so it can be stored directly in that HTML field.
+- Do not mention the Job Opening table, AI Generated JD field, storage process, database, or Flow Designer in the generated job description.
+
+11. FORMATTING
+- Return valid HTML only.
+- Do not use Markdown.
+- Do not use Markdown symbols such as **, *, or #.
+- Do not use code fences.
+- Use &lt;h2&gt; for the six main section headings.
+- Use &lt;p&gt; for normal paragraphs.
+- Use &lt;ul&gt; and &lt;li&gt; for bullet points.
+- Use &lt;strong&gt; only when useful for emphasis.
+- Do not include &lt;html&gt;, &lt;head&gt;, or &lt;body&gt; tags.
+- Do not include disclaimers, notes, explanations, or comments about these rules.
+- Do not mention that AI generated the job description.
+- Return only the completed professional job description.
+
+FINAL REQUIREMENT:
+
+The output must be a clean, professional, accurate, recruiter-ready HTML job description that can be directly stored in the AI Generated JD field of the NEXORA Job Opening table.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 09:18:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae981898692b03107f444782061832fc</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>da348c9b515303107f446e1951bb34b3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_generative_ai_config_ae981898692b03107f444782061832fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 09:39:41</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>2</version>
+    </sys_generative_ai_config>
+</record_update>

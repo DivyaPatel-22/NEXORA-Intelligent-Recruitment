@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_feature_mapping">
+    <sys_gen_ai_feature_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <customer_updatable>true</customer_updatable>
+        <default_tier>false</default_tier>
+        <document>8fd9efd6a86303107f44168cb949e904</document>
+        <document_table>sys_one_extend_capability</document_table>
+        <feature_name>NEXORA  AI Feedback Consolidation</feature_name>
+        <licensable>true</licensable>
+        <metadata/>
+        <skip_on_group_call>false</skip_on_group_call>
+        <sys_class_name>sys_gen_ai_feature_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:40:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4fd9efd6a86303107f44168cb949e924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NEXORA  AI Feedback Consolidation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_gen_ai_feature_mapping_4fd9efd6a86303107f44168cb949e924</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 05:40:08</sys_updated_on>
+        <tier/>
+    </sys_gen_ai_feature_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=4fd9efd6a86303107f44168cb949e924"/>
+</record_update>

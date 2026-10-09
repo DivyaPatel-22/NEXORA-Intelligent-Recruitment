@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_config">
+    <sn_aia_agent_config action="DELETE">
+        <active>true</active>
+        <agent display_value="xyz">a93c0850443b43107f446983d8f840d7</agent>
+        <agent_descriptor/>
+        <agent_learning>false</agent_learning>
+        <doc_url/>
+        <icon_url/>
+        <public>false</public>
+        <run_as_user/>
+        <specialist_enabled>false</specialist_enabled>
+        <sys_class_name>sn_aia_agent_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-03 18:40:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>527cc090443b43107f446983d8f84048</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sn_aia_agent_config_527cc090443b43107f446983d8f84048</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 18:40:44</sys_updated_on>
+    </sn_aia_agent_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</application>
+        <file_path/>
+        <instance_id>06d18dc7c38fcf94a03197af050131d9</instance_id>
+        <instance_name>ltm-hck-2876-0039</instance_name>
+        <name>sn_aia_agent_config_527cc090443b43107f446983d8f84048</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_config"><sn_aia_agent_config action="INSERT_OR_UPDATE"><active>true</active><agent display_value="xyz">a93c0850443b43107f446983d8f840d7</agent><agent_descriptor/><agent_learning>false</agent_learning><doc_url/><icon_url/><public>false</public><run_as_user/><specialist_enabled>false</specialist_enabled><sys_class_name>sn_aia_agent_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-03 18:40:44</sys_created_on><sys_domain>global</sys_domain><sys_id>527cc090443b43107f446983d8f84048</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package><sys_policy/><sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope><sys_update_name>sn_aia_agent_config_527cc090443b43107f446983d8f84048</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-03 18:40:44</sys_updated_on></sn_aia_agent_config></record_update>]]></payload>
+        <payload_hash>-948037403</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ad0157ba441703107f44174bc6ccddd3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-03 18:40:44</sys_created_on>
+        <sys_id>d67cc090443b43107f446983d8f8404b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a103118c290000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 18:40:44</sys_updated_on>
+        <type>AI Agent Config</type>
+        <update_guid>d67cc0900a3b43105b8c8b74bfc5f54a</update_guid>
+        <update_guid_history>d67cc0900a3b43105b8c8b74bfc5f54a:-948037403</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">60e921d4f93303107f44e7503c480516</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:28:50</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_config">sn_aia_agent_config</sys_db_object>
+        <sys_id>39dd882cca794f709513d34b53a6f6a4</sys_id>
+        <sys_metadata>527cc090443b43107f446983d8f84048</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_scope_delete display_value="">3c2e08f8e6974dfabbdb11cb63c9a684</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_config_527cc090443b43107f446983d8f84048</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_config_527cc090443b43107f446983d8f84048">d67cc090443b43107f446983d8f8404b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 01:28:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

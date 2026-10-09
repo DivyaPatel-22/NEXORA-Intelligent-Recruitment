@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="82dbe7b2441b03107f44174bc6ccdd8c" label="Application" max_length="40" name="x_snc_nexora_int_0_application" type="collection">
+        <element label="Strengths" max_length="8000" name="strengths" type="html"/>
+        <element label="Candidate" max_length="32" name="candidate" reference="x_snc_nexora_int_0_candidate" type="reference"/>
+        <element label="Job Opening" max_length="32" name="job_opening" reference="x_snc_nexora_int_0_job_opening" type="reference"/>
+        <element label="Application Date" max_length="40" name="application_date" type="glide_date_time"/>
+        <element choice="1" label="Hiring Recommendation" max_length="40" name="hiring_recommendation" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hold" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Shortlist" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Reject" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element label="Skill Gaps" max_length="8000" name="skill_gaps" type="html"/>
+        <element label="Candidate Email" max_length="100" name="candidate_email" type="string"/>
+        <element label="Fit Score" max_length="20" name="fit_score" type="decimal"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Screening" sequence="3" value="2"/>
+                <element inactive_on_update="false" label="Applied" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Interview" sequence="1" value="4"/>
+                <element inactive_on_update="false" label="Selected" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Shortlisted" sequence="5" value="3"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="6"/>
+            </choice>
+        </element>
+        <element choice="1" label="Screening Status" max_length="40" name="screening_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Failed" value="3"/>
+                <element inactive_on_update="false" label="Passed" value="2"/>
+                <element inactive_on_update="false" label="Pending" value="1"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="candidate"/>
+        </index>
+        <index name="index2">
+            <element name="job_opening"/>
+        </index>
+    </element>
+</database>

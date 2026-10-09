@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="NEXORA Resume Analysis Agent">f72be958f93303107f44e7503c48050f</agent>
+        <description/>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity/>
+        <entity_id/>
+        <execution_mode>copilot</execution_mode>
+        <inputs/>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Unfinished Tool-1791077801901</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:36:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>afabe998f93303107f44e7503c4805be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Unfinished Tool-1791077801901</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_afabe998f93303107f44e7503c4805be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 01:36:41</sys_updated_on>
+        <timeout/>
+        <tool display_value="AIA File Upload">b064af48ffb822101dbaffffffffff20</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</application>
+        <file_path/>
+        <instance_id>06d18dc7c38fcf94a03197af050131d9</instance_id>
+        <instance_name>ltm-hck-2876-0039</instance_name>
+        <name>sn_aia_agent_tool_m2m_afabe998f93303107f44e7503c4805be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="NEXORA Resume Analysis Agent">f72be958f93303107f44e7503c48050f</agent><description/><display_mode>inline</display_mode><display_output>true</display_output><document_status/><entity/><entity_id/><execution_mode>copilot</execution_mode><inputs/><max_auto_executions>10</max_auto_executions><name>Unfinished Tool-1791077801901</name><output_transformation_strategy>none</output_transformation_strategy><post_message/><post_processing_script/><pre_message/><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-04 01:36:41</sys_created_on><sys_domain>global</sys_domain><sys_id>afabe998f93303107f44e7503c4805be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Unfinished Tool-1791077801901</sys_name><sys_overrides/><sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package><sys_policy/><sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_afabe998f93303107f44e7503c4805be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-04 01:36:41</sys_updated_on><timeout/><tool display_value="AIA File Upload">b064af48ffb822101dbaffffffffff20</tool><tool_attributes>{}</tool_attributes><transformation_instructions/><widgets/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-2119182596</payload_hash>
+        <record_name>Unfinished Tool-1791077801901</record_name>
+        <reverted_from/>
+        <source>ad0157ba441703107f44174bc6ccddd3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:36:42</sys_created_on>
+        <sys_id>bfabe998f93303107f44e7503c4805c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1048e61420000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 01:36:42</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>bfabe998593303108ff3519161c70dc4</update_guid>
+        <update_guid_history>bfabe998593303108ff3519161c70dc4:-2119182596</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Unfinished Tool-1791077801901">042cadd8f93303107f44e7503c4805d6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:38:38</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>bfa0780de3424ea4a7e27d35226ea184</sys_id>
+        <sys_metadata>afabe998f93303107f44e7503c4805be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Unfinished Tool-1791077801901</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_scope_delete display_value="">3c2e08f8e6974dfabbdb11cb63c9a684</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_afabe998f93303107f44e7503c4805be</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_afabe998f93303107f44e7503c4805be">bfabe998f93303107f44e7503c4805c5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 01:38:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

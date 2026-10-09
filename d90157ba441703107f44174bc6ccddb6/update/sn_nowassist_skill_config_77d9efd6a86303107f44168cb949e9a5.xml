@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config">
+    <sn_nowassist_skill_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <description><![CDATA[Consolidates interview feedback from multiple interviewers into a single assessment of candidate strengths, weaknesses, scores, and overall recommendation.]]></description>
+        <edited_in_nask>false</edited_in_nask>
+        <in_product_active>false</in_product_active>
+        <in_product_roles/>
+        <internal_name>nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5</internal_name>
+        <is_template>false</is_template>
+        <name>NEXORA  AI Feedback Consolidation</name>
+        <nap_skill_applicability/>
+        <order>100</order>
+        <parent/>
+        <skill_family display_value="Other">a5efaf1c93764210aa5730f16489186d</skill_family>
+        <skill_id>8fd9efd6a86303107f44168cb949e904</skill_id>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <state>1</state>
+        <success_message/>
+        <sys_class_name>sn_nowassist_skill_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:40:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>77d9efd6a86303107f44168cb949e9a5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>NEXORA  AI Feedback Consolidation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_77d9efd6a86303107f44168cb949e9a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 06:39:32</sys_updated_on>
+    </sn_nowassist_skill_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=77d9efd6a86303107f44168cb949e9a5"/>
+</record_update>

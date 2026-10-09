@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="di_skill_config">
+    <di_skill_config action="DELETE">
+        <capability display_value="Document QnA">899ed0f20763021017741f00ead3006e</capability>
+        <config>{"prompt":{},"provider":{},"pipeline":{"enable_native_translation":"false","enable_multimodal_input":false,"enable_citations":"false","response_type":"qna","include_key_info":"false","enable_relevance":"true","enable_multiple_requests":"true","enable_response_attribution":"false"}}</config>
+        <flow display_value="Document Q&amp;A">cf4882eca31e5210efd734f7651e6162</flow>
+        <key_group/>
+        <skill_config display_value="Extract information from documents">2a61d90d07c61210cf8c1f00ead300e5</skill_config>
+        <sys_class_name>di_skill_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 08:49:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8f55bc57511b03107f446e1951bb3471</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>di_skill_config_8f55bc57511b03107f446e1951bb3471</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 08:49:44</sys_updated_on>
+        <task_definition display_value="Resume Information Extraction">cb557c57511b03107f446e1951bb34e8</task_definition>
+        <type>question</type>
+    </di_skill_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</application>
+        <file_path/>
+        <instance_id>06d18dc7c38fcf94a03197af050131d9</instance_id>
+        <instance_name>ltm-hck-2876-0039</instance_name>
+        <name>di_skill_config_8f55bc57511b03107f446e1951bb3471</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="di_skill_config"><di_skill_config action="INSERT_OR_UPDATE"><capability display_value="Document QnA">899ed0f20763021017741f00ead3006e</capability><config>{"prompt":{},"provider":{},"pipeline":{"enable_native_translation":"false","enable_multimodal_input":false,"enable_citations":"false","response_type":"qna","include_key_info":"false","enable_relevance":"true","enable_multiple_requests":"true","enable_response_attribution":"false"}}</config><flow display_value="Document Q&amp;A">cf4882eca31e5210efd734f7651e6162</flow><key_group/><skill_config display_value="Extract information from documents">2a61d90d07c61210cf8c1f00ead300e5</skill_config><sys_class_name>di_skill_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-18 08:49:44</sys_created_on><sys_domain>global</sys_domain><sys_id>8f55bc57511b03107f446e1951bb3471</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package><sys_policy/><sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope><sys_update_name>di_skill_config_8f55bc57511b03107f446e1951bb3471</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-18 08:49:44</sys_updated_on><task_definition display_value="Resume Information Extraction">cb557c57511b03107f446e1951bb34e8</task_definition><type>question</type></di_skill_config></record_update>]]></payload>
+        <payload_hash>-1153998807</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ad0157ba441703107f44174bc6ccddd3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 08:49:44</sys_created_on>
+        <sys_id>4b55bc57511b03107f446e1951bb347b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b3b517900000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 08:49:44</sys_updated_on>
+        <type>DI GenAI Skill Config</type>
+        <update_guid>8b55bc57ed1b03106e801d512ae98e7a</update_guid>
+        <update_guid_history>8b55bc57ed1b03106e801d512ae98e7a:-1153998807,c755bc57381b0310e7ce97623cb7ca73:-262451445</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f5a53897511b03107f446e1951bb34dc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 08:51:01</sys_created_on>
+        <sys_db_object display_value="" name="di_skill_config">di_skill_config</sys_db_object>
+        <sys_id>d1f367f398ca462e9b6074edec91f3f1</sys_id>
+        <sys_metadata>8f55bc57511b03107f446e1951bb3471</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_scope_delete display_value="">3c2e08f8e6974dfabbdb11cb63c9a684</sys_scope_delete>
+        <sys_update_name>di_skill_config_8f55bc57511b03107f446e1951bb3471</sys_update_name>
+        <sys_update_version display_value="di_skill_config_8f55bc57511b03107f446e1951bb3471">4b55bc57511b03107f446e1951bb347b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 08:51:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

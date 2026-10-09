@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="94d27bba441b03107f44174bc6ccddd0" label="Hiring Recommendation" max_length="40" name="x_snc_nexora_int_0_hiring_recommendation" type="collection">
+        <element label="Fit Score" max_length="40" name="fit_score" type="integer"/>
+        <element label="Reasoning" max_length="8000" name="reasoning" type="html"/>
+        <element label="Candidate Email" max_length="40" name="candidate_email" type="string"/>
+        <element label="AI Generated" max_length="40" name="ai_generated" type="boolean"/>
+        <element label="Skill Gaps" max_length="8000" name="skill_gaps" type="html"/>
+        <element choice="1" label="Final Decision" max_length="40" name="final_decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Selected" value="Selected"/>
+                <element inactive_on_update="false" label="Rejected" value="Rejected"/>
+                <element inactive_on_update="false" label="Pending" value="Pending"/>
+            </choice>
+        </element>
+        <element label="Application" max_length="32" name="application" reference="x_snc_nexora_int_0_application" type="reference"/>
+        <element choice="1" label="Recommendation" max_length="40" name="recommendation" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="select" sequence="2" value="select"/>
+                <element inactive_on_update="false" label="Reject" sequence="1" value="reject"/>
+                <element inactive_on_update="false" label="Hold" sequence="0" value="hold"/>
+            </choice>
+        </element>
+        <element label="Reviewed By" max_length="40" name="reviewed_by" type="string"/>
+        <index name="index">
+            <element name="application"/>
+        </index>
+    </element>
+</database>

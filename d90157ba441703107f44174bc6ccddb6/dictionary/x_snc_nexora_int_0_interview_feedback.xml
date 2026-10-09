@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="60403bfa441b03107f44174bc6ccddbc" label="Interview Feedback" max_length="40" name="x_snc_nexora_int_0_interview_feedback" type="collection">
+        <element label="Problem Solving Score" max_length="20" name="problem_solving_score" type="decimal"/>
+        <element label="Communication Score" max_length="20" name="communication_score" type="decimal"/>
+        <element label="Overall Score" max_length="20" name="overall_score" type="decimal"/>
+        <element label="Technical Score" max_length="20" name="technical_score" type="decimal"/>
+        <element label="weaknesses" max_length="8000" name="weaknesses" type="html"/>
+        <element choice="1" label="Recommendation" max_length="40" name="recommendation" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Shortlist" value="1"/>
+                <element inactive_on_update="false" label="Hold" value="3"/>
+                <element inactive_on_update="false" label="Reject" value="4"/>
+            </choice>
+        </element>
+        <element label="Strengths" max_length="8000" name="strengths" type="html"/>
+        <element label="Comments" max_length="8000" name="comments" type="html"/>
+        <element label="Interview" max_length="32" name="interview" reference="x_snc_nexora_int_0_interview" type="reference"/>
+        <index name="index">
+            <element name="interview"/>
+        </index>
+    </element>
+</database>

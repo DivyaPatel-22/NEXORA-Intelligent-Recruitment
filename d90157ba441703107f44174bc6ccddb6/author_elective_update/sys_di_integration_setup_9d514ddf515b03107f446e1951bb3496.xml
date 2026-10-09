@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_integration_setup">
+    <sys_di_integration_setup action="DELETE">
+        <condition table="x_snc_nexora_int_0_candidate">resumeISNOTEMPTY<item endquery="false" field="resume" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <create_flow>true</create_flow>
+        <flow display_value="DocIntel Task Processing Flow - Resume Information Extraction - Resume Extraction - Candidate">39514113519b03107f446e1951bb34b1</flow>
+        <flow_conditions>resumeISNOTEMPTY</flow_conditions>
+        <mluc_id/>
+        <name>Resume Extraction - Candidate</name>
+        <sys_class_name>sys_di_integration_setup</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 09:42:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9d514ddf515b03107f446e1951bb3496</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Resume Extraction - Candidate</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_di_integration_setup_9d514ddf515b03107f446e1951bb3496</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 09:42:09</sys_updated_on>
+        <target_table>x_snc_nexora_int_0_candidate</target_table>
+        <task_definition display_value="Resume Information Extraction">1cc53c97511b03107f446e1951bb3433</task_definition>
+        <trigger>x_snc_nexora_int_0_candidate</trigger>
+        <type>process_task</type>
+    </sys_di_integration_setup>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</application>
+        <file_path/>
+        <instance_id>06d18dc7c38fcf94a03197af050131d9</instance_id>
+        <instance_name>ltm-hck-2876-0039</instance_name>
+        <name>sys_di_integration_setup_9d514ddf515b03107f446e1951bb3496</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_integration_setup"><sys_di_integration_setup action="INSERT_OR_UPDATE"><condition table="x_snc_nexora_int_0_candidate">resumeISNOTEMPTY<item endquery="false" field="resume" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/></condition><create_flow>true</create_flow><flow display_value="DocIntel Task Processing Flow - Resume Information Extraction - Resume Extraction - Candidate">39514113519b03107f446e1951bb34b1</flow><flow_conditions>resumeISNOTEMPTY</flow_conditions><mluc_id/><name>Resume Extraction - Candidate</name><sys_class_name>sys_di_integration_setup</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-18 09:42:03</sys_created_on><sys_domain>global</sys_domain><sys_id>9d514ddf515b03107f446e1951bb3496</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Resume Extraction - Candidate</sys_name><sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package><sys_policy/><sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope><sys_update_name>sys_di_integration_setup_9d514ddf515b03107f446e1951bb3496</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-18 09:42:09</sys_updated_on><target_table>x_snc_nexora_int_0_candidate</target_table><task_definition display_value="Resume Information Extraction">1cc53c97511b03107f446e1951bb3433</task_definition><trigger>x_snc_nexora_int_0_candidate</trigger><type>process_task</type></sys_di_integration_setup></record_update>]]></payload>
+        <payload_hash>554437165</payload_hash>
+        <record_name>Resume Extraction - Candidate</record_name>
+        <reverted_from/>
+        <source>ad0157ba441703107f44174bc6ccddd3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 09:42:09</sys_created_on>
+        <sys_id>3a51c113519b03107f446e1951bb3423</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b3e513f80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 09:42:09</sys_updated_on>
+        <type>Integration Setup</type>
+        <update_guid>3a51c113179b0310ae5101b509ed9622</update_guid>
+        <update_guid_history>3a51c113179b0310ae5101b509ed9622:554437165</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 05:45:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_di_integration_setup">sys_di_integration_setup</sys_db_object>
+        <sys_id>477a961dacbe4277aaf5566873f07961</sys_id>
+        <sys_metadata>9d514ddf515b03107f446e1951bb3496</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resume Extraction - Candidate</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_scope_delete display_value="">3c2e08f8e6974dfabbdb11cb63c9a684</sys_scope_delete>
+        <sys_update_name>sys_di_integration_setup_9d514ddf515b03107f446e1951bb3496</sys_update_name>
+        <sys_update_version display_value="sys_di_integration_setup_9d514ddf515b03107f446e1951bb3496">3a51c113519b03107f446e1951bb3423</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 05:45:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

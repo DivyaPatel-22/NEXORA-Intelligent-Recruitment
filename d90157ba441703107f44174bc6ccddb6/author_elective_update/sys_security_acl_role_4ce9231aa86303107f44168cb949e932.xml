@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:40:12</sys_created_on>
+        <sys_id>4ce9231aa86303107f44168cb949e932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5.snc_internal</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_security_acl display_value="nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5">04e9231aa86303107f44168cb949e92f</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4ce9231aa86303107f44168cb949e932</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 05:40:12</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</application>
+        <file_path/>
+        <instance_id>06d18dc7c38fcf94a03197af050131d9</instance_id>
+        <instance_name>ltm-hck-2876-0039</instance_name>
+        <name>sys_security_acl_role_4ce9231aa86303107f44168cb949e932</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 05:40:12</sys_created_on><sys_id>4ce9231aa86303107f44168cb949e932</sys_id><sys_mod_count>0</sys_mod_count><sys_name>nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5.snc_internal</sys_name><sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package><sys_policy/><sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope><sys_security_acl display_value="nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5">04e9231aa86303107f44168cb949e92f</sys_security_acl><sys_update_name>sys_security_acl_role_4ce9231aa86303107f44168cb949e932</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 05:40:12</sys_updated_on><sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-447535615</payload_hash>
+        <record_name>nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5.snc_internal</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:41:16</sys_created_on>
+        <sys_id>f71a2b1aa86303107f44168cb949e9f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0e68822b10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 05:41:16</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>b71a2b1a01630310a899050152c56cf4</update_guid>
+        <update_guid_history>b71a2b1a01630310a899050152c56cf4:-447535615</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5.snc_internal">771a2b1aa86303107f44168cb949e9f5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:41:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0cf768e58cb84dc688c1922487a89464</sys_id>
+        <sys_metadata>4ce9231aa86303107f44168cb949e932</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5.snc_internal</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_parent display_value="nexora_ai_feedback_consolidation.77d9efd6a86303107f44168cb949e9a5">04e9231aa86303107f44168cb949e92f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_scope_delete display_value="">3c2e08f8e6974dfabbdb11cb63c9a684</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_4ce9231aa86303107f44168cb949e932</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_4ce9231aa86303107f44168cb949e932">f71a2b1aa86303107f44168cb949e9f4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 05:41:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"36c61c17511703107f446e1951bb3436"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>e2c61c17511703107f446e1951bb3401</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Incident Summarization</name>
+        <parent/>
+        <prompt>You are an expert recruitment screening assistant for NEXORA.
+
+Evaluate the candidate against the requirements of the specific Job Opening provided below.
+
+CANDIDATE INFORMATION
+
+Candidate Skills:
+{{skills}}
+
+Candidate Education:
+{{education}}
+
+Candidate Experience:
+{{experience}}
+
+
+JOB OPENING REQUIREMENTS
+
+Required Skills:
+{{required_skills}}
+
+Required Experience:
+{{required_experience}}
+
+Required Education:
+{{required_education}}
+
+
+SCREENING OBJECTIVE
+
+Compare the candidate's qualifications with the Job Opening requirements and produce a concise, factual screening assessment.
+
+Evaluate:
+
+1. Skills Match
+2. Experience Match
+3. Education Match
+4. Skill Gaps
+5. Overall Fit
+6. Recommendation
+
+
+FIT SCORE
+
+Calculate a Fit Score from 0 to 100 based only on the information provided.
+
+Use this weighting:
+
+- Skills Match: 50%
+- Experience Match: 30%
+- Education Match: 20%
+
+Only award points for qualifications explicitly supported by the provided candidate information.
+
+If information is missing, do not assume the candidate has that qualification.
+
+
+RECOMMENDATION
+
+Use exactly one of these values:
+
+- Shortlist
+- Hold
+- Reject
+
+Use:
+
+- Shortlist when the available information shows strong alignment with the stated requirements.
+- Hold when important information is missing or the candidate has a mixed match that requires human review.
+- Reject when the available information clearly shows that the candidate does not meet important stated requirements.
+
+The recommendation is an AI screening recommendation only. The final hiring decision must be made by the authorized human hiring manager.
+
+
+OUTPUT FORMAT
+
+Return valid HTML only.
+
+Create exactly this structure:
+
+&lt;h2&gt;Candidate Screening Assessment&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Screening Criteria&lt;/th&gt;
+&lt;th&gt;Assessment&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Fit Score&lt;/td&gt;
+&lt;td&gt;[score]/100&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Skills Match&lt;/td&gt;
+&lt;td&gt;[matched skills and concise assessment]&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Experience Match&lt;/td&gt;
+&lt;td&gt;[experience comparison]&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Education Match&lt;/td&gt;
+&lt;td&gt;[education comparison]&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Skill Gaps&lt;/td&gt;
+&lt;td&gt;[missing or weak required skills]&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Overall Fit&lt;/td&gt;
+&lt;td&gt;[Strong Match / Partial Match / Limited Match]&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Recommendation&lt;/td&gt;
+&lt;td&gt;[Shortlist / Hold / Reject]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;Strengths&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[candidate strength]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Skill Gaps&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[skill gap]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Recommendation Justification&lt;/h3&gt;
+&lt;p&gt;[brief factual justification]&lt;/p&gt;
+
+
+STORAGE
+
+- The completed screening assessment will be used to update the related NEXORA Application record.
+- The Fit Score will be stored in the Application table's Fit Score field.
+- The recommendation will be stored in the Application table's Screening Status field.
+- The identified strengths will be stored in the Application table's Strengths field.
+- The identified skill gaps will be stored in the Application table's Skill Gaps field.
+- The Application record is related to both the Candidate and Job Opening.
+- Generate the screening results so they can be mapped to the corresponding fields in the related Application record.
+- Do not mention the storage process, Application table, database, or Flow Designer in the generated screening assessment.
+
+
+ACCURACY RULES
+
+- Use only the information provided in the inputs.
+- Do not invent skills, experience, education, certifications, achievements, or qualifications.
+- Do not assume that a missing qualification is present.
+- Do not change the Job Opening requirements.
+- Do not change the candidate's provided information.
+- If information is missing, state "Not provided" or "Cannot be determined from the provided information."
+- Keep the assessment concise and factual.
+- Do not include unrelated information.
+- Do not use Markdown.
+- Do not use code fences.
+- Do not include &lt;html&gt;, &lt;head&gt;, or &lt;body&gt; tags.
+- Return only the completed screening assessment.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 10:06:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2a3e01c69ab03107f444782061832aa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>e2c61c17511703107f446e1951bb3401</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_generative_ai_config_e2a3e01c69ab03107f444782061832aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 10:08:08</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>2</version>
+    </sys_generative_ai_config>
+</record_update>

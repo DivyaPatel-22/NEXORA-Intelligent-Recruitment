@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"77d9efd6a86303107f44168cb949e9a5"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>03d9efd6a86303107f44168cb949e92d</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Interview Feedback Consolidation</name>
+        <parent/>
+        <prompt>You are an AI assistant helping a recruitment team consolidate interview feedback for a candidate.
+
+Your task is to consolidate the supplied interview feedback into one clear, factual, and professional assessment.
+
+INTERVIEW FEEDBACK:   {{interview_feedback}} 
+
+Analyze ONLY the information provided above.
+
+Create the following sections:
+
+1. Overall Score Summary
+2. Strengths
+3. Weaknesses / Skill Gaps
+4. Interviewer Comments
+5. Recommendation
+6. Final Assessment
+
+IMPORTANT RULES:
+
+- Use ONLY the information provided in the interview feedback.
+- Do not invent, assume, estimate, or fabricate any information.
+- Do not create scores that are not provided.
+- Do not calculate or modify scores.
+- Preserve the provided scores exactly.
+- Preserve the provided strengths exactly in meaning.
+- Preserve the provided weaknesses or skill gaps exactly in meaning.
+- Preserve the provided interviewer comments exactly in meaning.
+- Preserve the provided recommendation exactly.
+- If a score is missing, write "Not provided".
+- If strengths are missing, write "Not provided".
+- If weaknesses or skill gaps are missing, write "Not provided".
+- If interviewer comments are missing, write "Not provided".
+- If the recommendation is missing, write "Cannot be determined".
+- Do not make a hiring decision yourself.
+- Do not add information that is not present in the supplied feedback.
+
+OUTPUT FORMAT:
+
+Return ONLY clean HTML.
+
+Use this structure:
+
+&lt;h3&gt;Overall Score Summary&lt;/h3&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Technical Score&lt;/th&gt;&lt;td&gt;VALUE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Communication Score&lt;/th&gt;&lt;td&gt;VALUE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Problem-Solving Score&lt;/th&gt;&lt;td&gt;VALUE&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;Overall Score&lt;/th&gt;&lt;td&gt;VALUE&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;Strengths&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;VALUE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Weaknesses / Skill Gaps&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;VALUE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Interviewer Comments&lt;/h3&gt;
+&lt;p&gt;VALUE&lt;/p&gt;
+
+&lt;h3&gt;Recommendation&lt;/h3&gt;
+&lt;p&gt;VALUE&lt;/p&gt;
+
+&lt;h3&gt;Final Assessment&lt;/h3&gt;
+&lt;p&gt;Provide a concise factual summary based ONLY on the supplied interview feedback.&lt;/p&gt;
+
+Do not include Markdown.
+Do not include JSON.
+Do not include explanations outside the HTML. </prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-03 14:56:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>783917c8447343107f446983d8f84078</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>03d9efd6a86303107f44168cb949e92d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_generative_ai_config_783917c8447343107f446983d8f84078</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-03 15:18:34</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>2</version>
+    </sys_generative_ai_config>
+</record_update>

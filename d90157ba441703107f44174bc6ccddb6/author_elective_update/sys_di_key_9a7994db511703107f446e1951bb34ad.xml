@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key">
+    <sys_di_key action="DELETE">
+        <active>true</active>
+        <additional_details/>
+        <description>Get the summary from the document.</description>
+        <display_name>Description</display_name>
+        <group_index>0</group_index>
+        <key_config/>
+        <key_group/>
+        <mandatory>true</mandatory>
+        <metadata/>
+        <name>description</name>
+        <order>0</order>
+        <prediction_method>e3e501183d051210f877ad8c34c5c40d</prediction_method>
+        <stp_threshold/>
+        <synonym/>
+        <sys_class_name>sys_di_key</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 06:47:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9a7994db511703107f446e1951bb34ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Description</sys_name>
+        <sys_package display_value="Customer Service Management AI agent collection" source="sn_csm_ai_agents">4c6db5bdff6b52106b89ffffffffff9f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_di_key_9a7994db511703107f446e1951bb34ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 06:47:54</sys_updated_on>
+        <target_field>description</target_field>
+        <target_table>sn_customerservice_case</target_table>
+        <task_definition display_value="migrated_21898628405556_4754_Case Updation">527954db511703107f446e1951bb34c1</task_definition>
+        <total_used_positive_samples>0</total_used_positive_samples>
+        <type>Text</type>
+    </sys_di_key>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</application>
+        <file_path/>
+        <instance_id>06d18dc7c38fcf94a03197af050131d9</instance_id>
+        <instance_name>ltm-hck-2876-0039</instance_name>
+        <name>sys_di_key_9a7994db511703107f446e1951bb34ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key"><sys_di_key action="INSERT_OR_UPDATE"><active>true</active><additional_details/><description>Get the summary from the document.</description><display_name>Description</display_name><group_index>0</group_index><key_config/><key_group/><mandatory>true</mandatory><metadata/><name>description</name><order>0</order><prediction_method>e3e501183d051210f877ad8c34c5c40d</prediction_method><stp_threshold/><synonym/><sys_class_name>sys_di_key</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-18 06:47:54</sys_created_on><sys_domain>global</sys_domain><sys_id>9a7994db511703107f446e1951bb34ad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Description</sys_name><sys_package display_value="Customer Service Management AI agent collection" source="sn_csm_ai_agents">4c6db5bdff6b52106b89ffffffffff9f</sys_package><sys_policy/><sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope><sys_update_name>sys_di_key_9a7994db511703107f446e1951bb34ad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-18 06:47:54</sys_updated_on><target_field>description</target_field><target_table>sn_customerservice_case</target_table><task_definition display_value="migrated_21898628405556_4754_Case Updation">527954db511703107f446e1951bb34c1</task_definition><total_used_positive_samples>0</total_used_positive_samples><type>Text</type></sys_di_key></record_update>]]></payload>
+        <payload_hash>956517232</payload_hash>
+        <record_name>Description</record_name>
+        <reverted_from/>
+        <source>ad0157ba441703107f44174bc6ccddd3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 06:47:54</sys_created_on>
+        <sys_id>da7994db511703107f446e1951bb34b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b3458d6a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 06:47:54</sys_updated_on>
+        <type>Field</type>
+        <update_guid>de7994db45170310dd5ac85b448efeb4</update_guid>
+        <update_guid_history>de7994db45170310dd5ac85b448efeb4:956517232</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-18 06:53:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_di_key">sys_di_key</sys_db_object>
+        <sys_id>04793a0abf2d4a8683c346ce7febca01</sys_id>
+        <sys_metadata>9a7994db511703107f446e1951bb34ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Description</sys_name>
+        <sys_package display_value="Customer Service Management AI agent collection" source="sn_csm_ai_agents">4c6db5bdff6b52106b89ffffffffff9f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_scope_delete display_value="">3c2e08f8e6974dfabbdb11cb63c9a684</sys_scope_delete>
+        <sys_update_name>sys_di_key_9a7994db511703107f446e1951bb34ad</sys_update_name>
+        <sys_update_version display_value="sys_di_key_9a7994db511703107f446e1951bb34ad">da7994db511703107f446e1951bb34b5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-18 06:53:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

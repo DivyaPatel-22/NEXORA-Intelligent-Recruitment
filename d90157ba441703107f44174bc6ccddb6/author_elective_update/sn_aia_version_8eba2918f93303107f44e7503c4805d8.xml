@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="DELETE">
+        <condition/>
+        <instructions>Analyze the candidate resume uploaded by the recruiter.
+
+Extract:
+1. Full Name
+2. Email Address
+3. Phone Number
+4. Education
+5. Professional Experience
+6. Technical and Professional Skills
+7. Resume Summary
+
+Rules:
+- Use only information explicitly present in the resume.
+- Do not invent or assume candidate information.
+- If information is not available, state "Not specified".
+- Preserve the candidate's information accurately.
+- Return the extracted information in a clear structured format.
+- Do not make hiring or rejection decisions.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:32:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8eba2918f93303107f44e7503c4805d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sn_aia_version_8eba2918f93303107f44e7503c4805d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 01:32:29</sys_updated_on>
+        <target_id>e4f9a1d4f93303107f44e7503c480562</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</application>
+        <file_path/>
+        <instance_id>06d18dc7c38fcf94a03197af050131d9</instance_id>
+        <instance_name>ltm-hck-2876-0039</instance_name>
+        <name>sn_aia_version_8eba2918f93303107f44e7503c4805d8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version"><sn_aia_version action="INSERT_OR_UPDATE"><condition/><instructions>Analyze the candidate resume uploaded by the recruiter.
+
+Extract:
+1. Full Name
+2. Email Address
+3. Phone Number
+4. Education
+5. Professional Experience
+6. Technical and Professional Skills
+7. Resume Summary
+
+Rules:
+- Use only information explicitly present in the resume.
+- Do not invent or assume candidate information.
+- If information is not available, state "Not specified".
+- Preserve the candidate's information accurately.
+- Return the extracted information in a clear structured format.
+- Do not make hiring or rejection decisions.</instructions><state>published</state><sys_class_name>sn_aia_version</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-04 01:32:29</sys_created_on><sys_domain>global</sys_domain><sys_id>8eba2918f93303107f44e7503c4805d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>V1</sys_name><sys_overrides/><sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package><sys_policy/><sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope><sys_update_name>sn_aia_version_8eba2918f93303107f44e7503c4805d8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-04 01:32:29</sys_updated_on><target_id>e4f9a1d4f93303107f44e7503c480562</target_id><target_table>sn_aia_agent</target_table><version_name>V1</version_name><version_number>1</version_number></sn_aia_version></record_update>]]></payload>
+        <payload_hash>819787434</payload_hash>
+        <record_name>V1</record_name>
+        <reverted_from/>
+        <source>ad0157ba441703107f44174bc6ccddd3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:32:30</sys_created_on>
+        <sys_id>82baa918f93303107f44e7503c4805c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1048a88710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 01:32:30</sys_updated_on>
+        <type>AIA Version</type>
+        <update_guid>42ba29181b330310f34d0ea286648ddc</update_guid>
+        <update_guid_history>42ba29181b330310f34d0ea286648ddc:819787434</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="V1">8f1ba558f93303107f44e7503c4805da</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:34:12</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_version">sn_aia_version</sys_db_object>
+        <sys_id>00dac7bec45b4dfe80d71d896693c229</sys_id>
+        <sys_metadata>8eba2918f93303107f44e7503c4805d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_scope_delete display_value="">3c2e08f8e6974dfabbdb11cb63c9a684</sys_scope_delete>
+        <sys_update_name>sn_aia_version_8eba2918f93303107f44e7503c4805d8</sys_update_name>
+        <sys_update_version display_value="sn_aia_version_8eba2918f93303107f44e7503c4805d8">82baa918f93303107f44e7503c4805c2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 01:34:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

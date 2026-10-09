@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0bf293fe441703107f44174bc6ccddc9" label="Job Opening" max_length="40" name="x_snc_nexora_int_0_job_opening" type="collection">
+        <element label="Job Title" max_length="40" name="job_title" type="string"/>
+        <element label="Required Experience" max_length="40" name="required_experience" type="string"/>
+        <element label="Location" max_length="100" name="location" type="string"/>
+        <element label="Number of Positions" max_length="40" name="number_of_positions" type="integer"/>
+        <element label="Department" max_length="40" name="department" type="string"/>
+        <element label="Education" max_length="40" name="education" type="string"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Required Skills" max_length="40" name="required_skills" type="string"/>
+        <element label="Application Deadline" max_length="40" name="application_deadline" type="glide_date"/>
+        <element label="Recruiter" max_length="32" name="recruiter" reference="sys_user" type="reference"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Closed" value="5"/>
+                <element inactive_on_update="false" label="Interview" value="4"/>
+                <element inactive_on_update="false" label="Draft" value="1"/>
+                <element inactive_on_update="false" label="Screening" value="3"/>
+                <element inactive_on_update="false" label="Open" value="2"/>
+            </choice>
+        </element>
+        <element label="Employment Type" max_length="40" name="employment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Part-Time" sequence="2" value="part_time"/>
+                <element inactive_on_update="false" label="Contract" sequence="3" value="contract"/>
+                <element inactive_on_update="false" label="Full-Time" sequence="1" value="full_time"/>
+                <element inactive_on_update="false" label="Internship" sequence="0" value="internship"/>
+            </choice>
+        </element>
+        <element display="true" label="AI Generated JD" max_length="8000" name="ai_generated_jd" type="html"/>
+        <index name="index">
+            <element name="recruiter"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
+        <compiled_handbook/>
+        <condition/>
+        <context_processing_script><![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]></context_processing_script>
+        <description>AI agent that analyzes uploaded candidate resumes and extracts candidate information for the NEXORA recruitment process.</description>
+        <extends/>
+        <extension_configuration/>
+        <external_agent_configuration/>
+        <inputs>""</inputs>
+        <instructions>Analyze the candidate resume uploaded by the recruiter.
+
+Extract:
+1. Full Name
+2. Email Address
+3. Phone Number
+4. Education
+5. Professional Experience
+6. Technical and Professional Skills
+7. Resume Summary
+
+Rules:
+- Use only information explicitly present in the resume.
+- Do not invent or assume candidate information.
+- If information is not available, state "Not specified".
+- Preserve the candidate's information accurately.
+- Return the extracted information in a clear structured format.
+- Do not make hiring or rejection decisions.</instructions>
+        <internal_name>global.x_snc_nexora_int_0.NEXORA Resume Analysis Agent</internal_name>
+        <name>NEXORA Resume Analysis Agent</name>
+        <outputs>""</outputs>
+        <parent/>
+        <post_processing_message>Candidate resume analysis completed successfully.</post_processing_message>
+        <processing_message>Analyzing the candidate resume...</processing_message>
+        <proficiency>- Expertly analyzes uploaded candidate resumes to extract and structure all relevant candidate information, including full name, email address, phone number, education, professional experience, technical and professional skills, and resume summary, ensuring that the data is accurately prepared for the NEXORA Candidate record. The agent operates strictly within the boundaries of the information explicitly present in the resume, preserving data integrity and adhering to the highest standards of accuracy and compliance.
+- Utilizes advanced extraction techniques to process both text and image-based resumes, accurately identifying and extracting candidate name, email, phone number, education, professional experience, technical and professional skills, and resume summary. The agent ensures that only information explicitly present in the resume is extracted, and if any field is missing, it is clearly marked as 'Not specified.' This capability guarantees that all candidate data is captured in a structured and reliable format, ready for further processing.
+- Seamlessly updates existing NEXORA Candidate records with the extracted candidate information, including name, email, phone, education, experience, skills, and resume summary. The agent ensures that all updates are performed using only the information present in the resume, without making any assumptions or modifications. This capability supports efficient and accurate candidate data management within the NEXORA recruitment platform.
+- Executes a complete workflow by first extracting all relevant candidate information from the uploaded resume and then updating the corresponding NEXORA Candidate record with the structured data. The agent ensures that each step is performed with strict adherence to data accuracy, explicitness, and compliance with the provided rules, thereby enabling a robust and automated candidate data processing pipeline for recruiters.</proficiency>
+        <record_type>custom</record_type>
+        <required_translations>[]</required_translations>
+        <research>false</research>
+        <role>You are an expert recruitment resume analysis agent for the NEXORA recruitment platform.
+
+Your responsibility is to analyze uploaded candidate resumes, accurately extract candidate information, and prepare the information for the NEXORA Candidate record.</role>
+        <root_agent_id/>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-04 01:35:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f72be958f93303107f44e7503c48050f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>NEXORA Resume Analysis Agent</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sn_aia_agent_f72be958f93303107f44e7503c48050f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-04 02:18:59</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_configuration">
+    <sys_agent_access_role_configuration action="INSERT_OR_UPDATE">
+        <action>limit_to_roles</action>
+        <agent>77d9efd6a86303107f44168cb949e9a5</agent>
+        <agent_table>sn_nowassist_skill_config</agent_table>
+        <allow_all_session_roles>false</allow_all_session_roles>
+        <description/>
+        <name>NEXORA  AI Feedback Consolidation</name>
+        <role_list/>
+        <sys_class_name>sys_agent_access_role_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 05:40:16</sys_created_on>
+        <sys_id>8de9231aa86303107f44168cb949e9a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NEXORA  AI Feedback Consolidation</sys_name>
+        <sys_package display_value="NEXORA Intelligent Recruitment Engine" source="x_snc_nexora_int_0">d90157ba441703107f44174bc6ccddb6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NEXORA Intelligent Recruitment Engine">d90157ba441703107f44174bc6ccddb6</sys_scope>
+        <sys_update_name>sys_agent_access_role_configuration_8de9231aa86303107f44168cb949e9a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 05:40:16</sys_updated_on>
+    </sys_agent_access_role_configuration>
+</record_update>

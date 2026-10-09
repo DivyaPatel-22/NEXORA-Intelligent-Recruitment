@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="945de77e44d703107f44174bc6ccdd31" label="Interview" max_length="40" name="x_snc_nexora_int_0_interview" type="collection">
+        <element label="AI Consolidated Feedback" max_length="8000" name="ai_consolidated_feedback" type="html"/>
+        <element choice="1" label="Interview Status" max_length="40" name="interview_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="3" value="scheduled"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="completed"/>
+                <element inactive_on_update="false" label="Cancelled"/>
+                <element inactive_on_update="false" label="Rescheduled" sequence="2" value="rescheduled"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="0" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed"/>
+                <element inactive_on_update="false" label="Rescheduled"/>
+            </choice>
+        </element>
+        <element label="Meeting Link" max_length="1024" name="meeting_link" type="url"/>
+        <element label="Application" max_length="32" name="application" reference="x_snc_nexora_int_0_application" type="reference"/>
+        <element label="Interviewer" max_length="40" name="interviewer" type="string"/>
+        <element label="Interviewer Email" max_length="100" name="interviewer_email" type="string"/>
+        <element label="Interview Date" max_length="40" name="interview_date" type="glide_date_time"/>
+        <element choice="1" label="Interview Type" max_length="40" name="interview_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Final"/>
+                <element inactive_on_update="false" label="Technical" sequence="2" value="technical"/>
+                <element inactive_on_update="false" label="HR"/>
+                <element inactive_on_update="false" label="Managerial"/>
+                <element inactive_on_update="false" label="HR" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Managerial" sequence="1" value="managerial"/>
+            </choice>
+        </element>
+        <element label="Duration" max_length="40" name="duration" type="integer"/>
+        <element label="Reminder Sent" max_length="40" name="reminder_sent" type="boolean"/>
+        <element choice="1" label="Interview Mode" max_length="40" name="interview_mode" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Online" sequence="1" value="online"/>
+                <element inactive_on_update="false" label="Offline"/>
+                <element inactive_on_update="false" label="Offline" sequence="0" value="offline"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="application"/>
+        </index>
+    </element>
+</database>
